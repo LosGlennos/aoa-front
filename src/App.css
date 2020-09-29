@@ -10,3 +10,42 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.intro-text {
+  text-align: center;
+}
+
+.information-text {
+  background-color: cadetblue;
+  text-align: center;
+}
+
+.album {
+  height: 400px;
+  background-color: darkgoldenrod;
+  text-align: center;
+}
+
+.location {
+  height: 400px;
+  background-color: firebrick;
+  text-align: center;
+}
+
+.program {
+  height: 400px;
+  background-color: green;
+  text-align: center;
+}
+
+.osa {
+  height: 400px;
+  background-color: indigo;
+  text-align: center;
+}
+
+.toastmasters {
+  height: 400px;
+  background-color: grey;
+  text-align: center;
+}
