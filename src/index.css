@@ -19,3 +19,12 @@ body, html {
 #root {
   height: 100%;
 }
+
+@font-face {
+  font-family: "moon-flower";
+  src: url("Moon Flower.ttf");
+}
+
+h1 {
+  font-family: "moon-flower", "Bitstream Vera Serif", serif !important;
+}

@@ -1,14 +1,11 @@
 import React from 'react';
 import './Program.css';
+import {Container} from 'semantic-ui-react';
 
 export default function Program() {
     return (
-        <div className="program">
-            <br />
-            <br />
-            <br />
-            <br />
-            <h1>Program</h1>
-        </div>
+        <Container textAlign='center'>
+            <h1 className='heading-text'>Program</h1>
+        </Container>
     )
 }

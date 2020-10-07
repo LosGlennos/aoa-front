@@ -1,10 +1,11 @@
 import React from 'react';
 import './Information.css';
+import {Container} from 'semantic-ui-react';
 
 export default function Information() {
     return (
-        <div className="information-text">
-            <h1>Viktig information</h1>
+        <Container textAlign="center">
+            <h1 className='heading-text'>Viktig information</h1>
             <strong>Klädkod</strong>
             <p>Kavaj</p>
             <br />
@@ -24,6 +25,6 @@ export default function Information() {
             <strong>Tänk på att</strong>
             <p>Vigselplatsen är i naturen precis vid vattnet. Så för alla tjejer som planerar att ha stilettklackar är tips att ta med ett par extra lågskor att byta om till vid vigseln.</p>
             <em>Hur du hittar till Stenungsön hittar du längre ner på sidan.</em>
-        </div>
+        </Container>
     );
 }
