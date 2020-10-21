@@ -4,7 +4,7 @@ import { Image, Container } from 'semantic-ui-react';
 
 export default function Toastmasters() {
     return (
-        <div>
+        <div className="dark-green-theme">
             <Container textAlign='center'>
                 <h1 className='heading-text'>Toastmasters</h1>
                 <Image src='/square-image.png' size='medium' circular centered />

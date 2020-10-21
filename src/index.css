@@ -27,4 +27,18 @@ body, html {
 
 h1 {
   font-family: "moon-flower", "Bitstream Vera Serif", serif !important;
+  color: white;
+}
+
+div {
+  color: white;
+}
+
+.ui.form .field>label {
+  color: rgba(255,255,255,.87) !important;
+}
+
+.ui.checkbox label, .ui.checkbox+label {
+  color: rgba(255,255,255,.87) !important;
+  transition: color .1s ease;
 }

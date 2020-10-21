@@ -1,3 +1,24 @@
 .heading-text {
   font-size: xxx-large;
 }
+
+.dark-green-theme {
+  background-color: #044649;
+}
+
+.green-theme {
+  background-color: #0D6E73;
+}
+
+.ui.divider:not(.vertical):not(.horizontal) {
+  border-top: 1px solid rgb(255, 255, 255) !important;
+  border-bottom: 1px solid rgba(255,255,255, 0) !important;
+}
+
+@media only screen and (max-width: 767px) {
+  .ui.container.program {
+    width: 80%!important;
+    margin-left: 1em!important;
+    margin-right: 1em!important;
+  }
+} 
