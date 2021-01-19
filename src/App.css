@@ -1,3 +1,11 @@
+p {
+  font-size: large;
+}
+
+strong {
+  font-size: large;
+}
+
 .heading-text {
   font-size: xxx-large;
 }
@@ -8,6 +16,11 @@
 
 .green-theme {
   background-color: #0D6E73;
+}
+
+.container-padding-2em {
+  padding-top: 2em;
+  padding-bottom: 2em;
 }
 
 .ui.divider:not(.vertical):not(.horizontal) {

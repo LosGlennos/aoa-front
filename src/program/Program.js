@@ -4,7 +4,7 @@ import { Container, Divider, Grid } from 'semantic-ui-react';
 
 export default function Program() {
     return (
-        <div className="green-theme" style={{ padding: 200 + 'px' }}>
+        <div className="green-theme container-padding-2em">
             <Container textAlign='center'>
                 <h1 className='heading-text'>Program</h1>
             </Container>
@@ -14,10 +14,10 @@ export default function Program() {
                 <Divider />
                 <Grid container columns={2}>
                     <Grid.Column>
-                        <h3>19:00</h3>
+                        <h3>18:00</h3>
                     </Grid.Column>
                     <Grid.Column>
-                        <h3>Vi träffas etc.</h3>
+                        <h3>Mingel samt grillkväll.</h3>
                     </Grid.Column>
                 </Grid>
                 <br />
@@ -26,10 +26,10 @@ export default function Program() {
                 <Divider />
                 <Grid container columns={2}>
                     <Grid.Column>
-                        <h3>08:00</h3>
+                        <h3>Valfri tid</h3>
                     </Grid.Column>
                     <Grid.Column>
-                        <h3>Lägger basen för dagsfyllan med en fet frukost. Bacon ingår ej.</h3>
+                        <h3>Frukost</h3>
                     </Grid.Column>
                 </Grid>
                 <Grid container columns={2}>
@@ -37,7 +37,15 @@ export default function Program() {
                         <h3>14:30</h3>
                     </Grid.Column>
                     <Grid.Column>
-                        <h3>Alicias strippor anländer.</h3>
+                        <h3>Mingel</h3>
+                    </Grid.Column>
+                </Grid>
+                <Grid container columns={2}>
+                    <Grid.Column>
+                        <h3>16:00</h3>
+                    </Grid.Column>
+                    <Grid.Column>
+                        <h3>Vigsel</h3>
                     </Grid.Column>
                 </Grid>
                 <Grid container columns={2}>
@@ -45,7 +53,7 @@ export default function Program() {
                         <h3>18:00</h3>
                     </Grid.Column>
                     <Grid.Column>
-                        <h3>Nu jävlar blir det rajraj!</h3>
+                        <h3>Middag & Fest</h3>
                     </Grid.Column>
                 </Grid>
                 <br />
@@ -54,10 +62,10 @@ export default function Program() {
                 <Divider />
                 <Grid container columns={2}>
                     <Grid.Column>
-                        <h3>10:00</h3>
+                        <h3>11:00</h3>
                     </Grid.Column>
                     <Grid.Column>
-                        <h3>Gömmer oss i solglasögonen över ytterligare en fet frukost. Bacon ingår ej.</h3>
+                        <h3>Brunch</h3>
                     </Grid.Column>
                 </Grid>
             </Container>

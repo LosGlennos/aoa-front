@@ -1,0 +1,23 @@
+.ui.image {
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.ui.center.aligned.container {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    width: 100%;
+}
+
+.ui.grid>.row>.column{
+    padding-left: 0!important;
+    padding-right: 0!important;
+}
+
+.ui.grid>.row {
+    padding-top: 0!important;
+    padding-bottom: 0!important;
+}

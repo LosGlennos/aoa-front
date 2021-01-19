@@ -8,24 +8,24 @@ export default function Album() {
             <Grid>
                 <Grid.Row columns={3}>
                     <Grid.Column>
-                        <Image src='/square-image.png' centered/>
+                        <Image src='/bild1.jpg' centered/>
                     </Grid.Column>
                     <Grid.Column>
-                        <Image src='/square-image.png' centered/>
+                        <Image src='/bild2.jpg' centered/>
                     </Grid.Column>
                     <Grid.Column>
-                        <Image src='/square-image.png' centered/>
+                        <Image src='/bild4.jpg' centered/>
                     </Grid.Column>
                 </Grid.Row>
                 <Grid.Row columns={3}>
                     <Grid.Column>
-                        <Image src='/square-image.png' centered/>
+                        <Image src='/bild5.jpg' centered/>
                     </Grid.Column>
                     <Grid.Column>
-                        <Image src='/square-image.png' centered/>
+                        <Image src='/bild6.jpg' centered/>
                     </Grid.Column>
                     <Grid.Column>
-                        <Image src='/square-image.png' centered/>
+                        <Image src='/bild7.png' centered/>
                     </Grid.Column>
                 </Grid.Row>
             </Grid>
