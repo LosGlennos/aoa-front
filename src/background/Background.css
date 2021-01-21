@@ -17,6 +17,7 @@ span {
 
 .background-container {
   height: 100%;
+  position: relative;
 }
 
 .background-text {
@@ -27,7 +28,8 @@ span {
   width: 100%;
   background-color: rgb(0,0,0,0.5);
   padding-bottom: 15px;
-  margin-top: 50em;
+  bottom: 10em;
+  position: absolute;
 }
 
 @media only screen and (max-width: 767px) {
@@ -45,7 +47,8 @@ span {
     width: 100%;
     background-color: rgb(0,0,0,0.5);
     padding-bottom: 15px;
-    margin-top: 25em;
+    bottom: 10em;
+    position: absolute;
   }
 
   span {
