@@ -10,6 +10,7 @@ export default function Osa() {
     const [allergies, setAllergies] = React.useState('');
     const [other, setOther] = React.useState('');
     const [responded, setResponded] = React.useState(false);
+    const [error, setError] = React.useState(false);
 
     const handleParticipantsChange = (e) => {
         setParticipants(e.target.value);
@@ -31,48 +32,57 @@ export default function Osa() {
         setOther(e.target.value)
     }
 
-    const sendEmail = async() => {
-        const response = await axios.post("https://7lmnuq9y65.execute-api.eu-west-1.amazonaws.com/default/aoa-send-email", {
+    const sendEmail = async () => {
+        if (participants === '') {
+            setError(true);
+            return;
+        }
+
+        axios.post("https://7lmnuq9y65.execute-api.eu-west-1.amazonaws.com/default/aoa-send-email", {
             participants: participants,
             stayingOverFriday: stayingOverFriday,
             stayingOverSaturday: stayingOverSaturday,
             allergies: allergies,
             other: other
-        },
-        {
-            method: "POST",
-            headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+        }).then(response => {
+            if (response.status === 200) {
+                setResponded(true);
+            }
         });
-
-        if (response.status === 200) {
-            setResponded(true);
-        }
     }
-    
+
     return (
         <div className="green-theme container-padding-2em">
             <Container textAlign='center'>
                 <h1 className='heading-text'>O.S.A</h1>
             </Container>
             <Container text>
-                {responded ? "Tackar för däääää" : <Form>
+                {responded ? <h3>Tack för ditt svar! Välkommen!</h3> : <Form>
+                    <Form.Input 
+                    label='Deltagare'
+                    id='form-input-control-error-deltagare'
+                    control={Input}
+                    name='participants'
+                    value={participants}
+                    onChange={handleParticipantsChange}
+                    error={error ? {
+                        content: 'Fyll i fältet',
+                        pointing: 'below',
+                    } : false}>
+                    </Form.Input>
                     <Form.Field>
-                        <label>Deltagare</label>
-                        <Input className="green-theme" onChange={handleParticipantsChange}/>
-                    </Form.Field>
-                    <Form.Field>
-                        <label>Övernattning</label>
-                        <Checkbox label='Fredag' checked={stayingOverFriday} onChange={handleStayingOverFridayChange} />
+                        <label>Övernattning (du kan kryssa i ett eller flera alternativ)</label>
+                        <Checkbox label='Fredag till lördag' checked={stayingOverFriday} onChange={handleStayingOverFridayChange} />
                         <br />
-                        <Checkbox label='Lördag' checked={stayingOverSaturday} onChange={handleStayingOverSaturdayChange}/>
+                        <Checkbox label='Lördag till söndag' checked={stayingOverSaturday} onChange={handleStayingOverSaturdayChange} />
                     </Form.Field>
                     <Form.Field>
                         <label>Allergier etc.</label>
-                        <Input className="green-theme" onChange={handleAllergiesChange}/>
+                        <Input className="green-theme" onChange={handleAllergiesChange} />
                     </Form.Field>
                     <Form.TextArea label='Övrigt' onChange={handleOtherChange} />
                     <Button onClick={sendEmail}>Submit</Button>
-                </Form> }
+                </Form>}
             </Container>
         </div>
     );

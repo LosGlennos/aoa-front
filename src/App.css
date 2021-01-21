@@ -7,7 +7,7 @@ strong {
 }
 
 .heading-text {
-  font-size: xxx-large;
+  font-size: 65pt;
 }
 
 .dark-green-theme {
@@ -20,7 +20,7 @@ strong {
 
 .container-padding-2em {
   padding-top: 2em;
-  padding-bottom: 2em;
+  padding-bottom: 7em;
 }
 
 .ui.divider:not(.vertical):not(.horizontal) {
@@ -30,8 +30,12 @@ strong {
 
 @media only screen and (max-width: 767px) {
   .ui.container.program {
-    width: 80%!important;
+    width: 90%!important;
     margin-left: 1em!important;
     margin-right: 1em!important;
+  }
+
+  .heading-text {
+    font-size: 40pt;
   }
 } 

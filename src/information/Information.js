@@ -13,6 +13,7 @@ export default function Information() {
                 <strong>Boende</strong>
                 <p>På Stenungsögården finns det sovplatser reserverat för alla. För att du ska få just det boende du vill, vänligen kontakta receptionen på deras mejl eller telefonnummer.</p>
                 <p>Vänta inte med att boka då det är lite först till kvarn. På Stenungsöngårdens hemsida kan ni se bilder, info och priser för de olika alternativen. Ert boende betalas på plats när ni checkar in.</p>
+                <p>Kursgården och Pensionat är ej bokningsbara.</p>
                 <p><a href="http://www.stenungsogarden.se/boende/">http://www.stenungsogarden.se/boende/</a></p>
                 <br />
                 <strong>Mat</strong>
