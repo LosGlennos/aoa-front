@@ -56,8 +56,12 @@ export default function Osa() {
             <Container textAlign='center'>
                 <h1 className='heading-text'>O.S.A</h1>
             </Container>
+            {responded ? 
+            <Container textAlign='center'>
+                <h3>Tack för ditt svar! Välkommen!</h3>
+            </Container> :
             <Container text>
-                {responded ? <h3>Tack för ditt svar! Välkommen!</h3> : <Form>
+                 <Form>
                     <Form.Input 
                     label='Deltagare'
                     id='form-input-control-error-deltagare'
@@ -82,8 +86,8 @@ export default function Osa() {
                     </Form.Field>
                     <Form.TextArea label='Övrigt' onChange={handleOtherChange} />
                     <Button onClick={sendEmail}>Submit</Button>
-                </Form>}
-            </Container>
+                </Form>
+            </Container>}
         </div>
     );
 }
