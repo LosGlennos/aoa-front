@@ -15,16 +15,16 @@ export default function Information() {
                 <strong>Boende</strong>
                 <br/>
                 <br/>
-                <p>På Stenungsögården finns det sovplatser reserverat för alla. För att du ska få just det boende du vill, vänligen kontakta receptionen på deras mejl eller telefonnummer.</p>
-                <p>Vänta inte med att boka då det är lite först till kvarn. På Stenungsöngårdens hemsida kan ni se bilder, info och priser för de olika alternativen. Ert boende betalas på plats när ni checkar in.</p>
+                <p>På Stenungsögården finns det sovplatser reserverat för alla. <br/>Ni som bokat boende för förra sommaren, ni ska ha fått ett mejl om att ert boende är ombokat till 16-17 juli 2022 så ni behöver inte boka igen.</p>
+                <p>Har ni inte bokat ert boende så boka så snart som möjligt. <br/>På Stenungsöngårdens hemsida kan ni se bilder, info och priser för de olika alternativen.<br/> Ert boende betalas på plats när ni checkar in.</p>
                 <p>Kursgården och Pensionat är ej bokningsbara.</p>
                 <p><a href="http://www.stenungsogarden.se/boende/">http://www.stenungsogarden.se/boende/</a></p>
                 <br />
                 <strong>Mat</strong>
                 <br/>
                 <br/>
-                <p>På fredagen bjuds det på grillat för er som är med oss.</p>
-                <p>Frukost på lördagen samt brunchen på söndagen meddelas vid er bokning av boende och betalas på plats.</p>
+                <p>På fredagen återkommer vi med tid och plats för er som vill vara med. Anmäl detta längre ner på sidan</p>
+                <p>Brunchen på söndagen meddelas vid er bokning av boende och betalas på plats.</p>
                 <p>Glöm inte att fylla i eventuella allergier, "tycker inte om fisk", specialkost etc.</p>
                 <br/>
                 <strong>Barn</strong>

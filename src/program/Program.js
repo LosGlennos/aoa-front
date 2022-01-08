@@ -10,31 +10,31 @@ export default function Program() {
             </Container>
             <br />
             <Container className="program">
-                <h2>9 juli</h2>
+                <h2>15 juli</h2>
                 <Divider />
                 <Grid container columns={2}>
                     <Grid.Column>
                         <h3>18:00</h3>
                     </Grid.Column>
                     <Grid.Column>
-                        <h3>Mingel samt grillkväll.</h3>
+                        <h3>Middag på stan.</h3>
                     </Grid.Column>
                 </Grid>
                 <br />
                 <br />
-                <h2>10 juli</h2>
+                <h2>16 juli</h2>
                 <Divider />
                 <Grid container columns={2}>
                     <Grid.Column>
-                        <h3>Valfri tid</h3>
+                        <h3>15:00</h3>
                     </Grid.Column>
                     <Grid.Column>
-                        <h3>Frukost</h3>
+                        <h3>Incheckning</h3>
                     </Grid.Column>
                 </Grid>
                 <Grid container columns={2}>
                     <Grid.Column>
-                        <h3>14:30</h3>
+                        <h3>15:00</h3>
                     </Grid.Column>
                     <Grid.Column>
                         <h3>Mingel</h3>
@@ -58,7 +58,7 @@ export default function Program() {
                 </Grid>
                 <br />
                 <br />
-                <h2>11 juli</h2>
+                <h2>17 juli</h2>
                 <Divider />
                 <Grid container columns={2}>
                     <Grid.Column>
