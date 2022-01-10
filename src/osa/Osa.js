@@ -5,7 +5,7 @@ import axios from 'axios';
 
 export default function Osa() {
     const [participants, setParticipants] = React.useState('');
-    const [stayingOverFriday, setStayingOverFriday] = React.useState(false);
+    const [dinnerFriday, setDinnerFriday] = React.useState(false);
     const [stayingOverSaturday, setStayingOverSaturday] = React.useState(false);
     const [allergies, setAllergies] = React.useState('');
     const [other, setOther] = React.useState('');
@@ -16,8 +16,8 @@ export default function Osa() {
         setParticipants(e.target.value);
     };
 
-    const handleStayingOverFridayChange = (e, data) => {
-        setStayingOverFriday(data.checked);
+    const handleDinnerFridayChange = (e, data) => {
+        setDinnerFriday(data.checked);
     };
 
     const handleStayingOverSaturdayChange = (e, data) => {
@@ -40,7 +40,7 @@ export default function Osa() {
 
         axios.post("https://7lmnuq9y65.execute-api.eu-west-1.amazonaws.com/default/aoa-send-email", {
             participants: participants,
-            stayingOverFriday: stayingOverFriday,
+            dinnerFriday: dinnerFriday,
             stayingOverSaturday: stayingOverSaturday,
             allergies: allergies,
             other: other
@@ -75,9 +75,11 @@ export default function Osa() {
                     } : false}>
                     </Form.Input>
                     <Form.Field>
-                        <label>Övernattning (du kan kryssa i ett eller flera alternativ)</label>
-                        <Checkbox label='Fredag till lördag' checked={stayingOverFriday} onChange={handleStayingOverFridayChange} />
-                        <br />
+                        <label>Middag i stan</label>
+                        <Checkbox label='Vill vara med och äta middag på fredagen i Göteborg' checked={dinnerFriday} onChange={handleDinnerFridayChange} />
+                    </Form.Field>
+                    <Form.Field>
+                        <label>Övernattning</label>
                         <Checkbox label='Lördag till söndag' checked={stayingOverSaturday} onChange={handleStayingOverSaturdayChange} />
                     </Form.Field>
                     <Form.Field>
