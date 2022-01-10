@@ -29,23 +29,15 @@ export default function Program() {
                         <h3>15:00</h3>
                     </Grid.Column>
                     <Grid.Column>
-                        <h3>Incheckning</h3>
+                        <h3>Incheckning & Mingel</h3>
                     </Grid.Column>
                 </Grid>
                 <Grid container columns={2}>
                     <Grid.Column>
-                        <h3>15:00</h3>
+                        <h3>15:45</h3>
                     </Grid.Column>
                     <Grid.Column>
-                        <h3>Mingel</h3>
-                    </Grid.Column>
-                </Grid>
-                <Grid container columns={2}>
-                    <Grid.Column>
-                        <h3>16:00</h3>
-                    </Grid.Column>
-                    <Grid.Column>
-                        <h3>Vigsel</h3>
+                        <h3>Samling utanför restaurangen (vita huset) <br/>för gemensam promenad till vigseln</h3>
                     </Grid.Column>
                 </Grid>
                 <Grid container columns={2}>
