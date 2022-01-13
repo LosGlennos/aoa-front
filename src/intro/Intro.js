@@ -5,6 +5,9 @@ import { Container } from 'semantic-ui-react';
 export default function Intro() {
     return (
         <div className="dark-green-theme container-padding-2em">
+        <Container textAlign="center">
+            <p><b><u>Vi har ställt om OSA funktionen för att kunna ta emot era svar för det nya datumet. Gå gärna in och lämna ert svar så snart som möjligt så att vi kan planera vidare inför dagen.</u></b></p>
+        </Container>
             <Container textAlign="center">
                 <h1 className='heading-text'>VÄLKOMMEN (igen) TILL #FYLKE2022</h1>
                 <p>Vi ser väldigt mycket fram emot att fira vår stora dag tillsammans med er vi tycker om allra mest!</p>
