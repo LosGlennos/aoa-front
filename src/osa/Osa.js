@@ -75,8 +75,8 @@ export default function Osa() {
                     } : false}>
                     </Form.Input>
                     <Form.Field>
-                        <label>Middag i stan</label>
-                        <Checkbox label='Vill vara med och äta middag på fredagen i Göteborg' checked={dinnerFriday} onChange={handleDinnerFridayChange} />
+                        <label>Förfest i Majorna</label>
+                        <Checkbox label='Vill vara med och förfesta i Majorna' checked={dinnerFriday} onChange={handleDinnerFridayChange} />
                     </Form.Field>
                     <Form.Field>
                         <label>Övernattning</label>
