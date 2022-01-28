@@ -17,7 +17,7 @@ export default function Program() {
                         <h3>18:00</h3>
                     </Grid.Column>
                     <Grid.Column>
-                        <h3>Middag på stan.</h3>
+                        <h3>Förfest på Blåsutgatan 6 i Majorna.</h3>
                     </Grid.Column>
                 </Grid>
                 <br />
