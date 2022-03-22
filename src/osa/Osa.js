@@ -80,7 +80,7 @@ export default function Osa() {
                     </Form.Field>
                     <Form.Field>
                         <label>Övernattning</label>
-                        <Checkbox label='Lördag till söndag' checked={stayingOverSaturday} onChange={handleStayingOverSaturdayChange} />
+                        <Checkbox label='Lördag till söndag (inklusive brunch)' checked={stayingOverSaturday} onChange={handleStayingOverSaturdayChange} />
                     </Form.Field>
                     <Form.Field>
                         <label>Allergier etc.</label>

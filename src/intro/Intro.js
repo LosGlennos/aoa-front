@@ -18,9 +18,6 @@ export default function Intro() {
                 Ert deltagande anmäler ni längre ner på sidan.</p>
                 <p>Vigseln äger rum på lördagen med efterföljande middag och fest.</p>
                 <p>Söndagen avslutas med en brunch.</p>
-                <br />
-                <p>Vi vill också förtydliga att vi är mitt i en pandemi (igen) och Stenungsögården följer självklart alla rekommendationer.</p>
-                <p>Vi utgår från att vi i sommar kommer kunna anordna vårt bröllop som planerat och vi kommer uppdatera hemsidan och er ju närmre bröllopet vi kommer.</p>
             </Container>
         </div>
     );

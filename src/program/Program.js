@@ -42,6 +42,22 @@ export default function Program() {
                 </Grid>
                 <Grid container columns={2}>
                     <Grid.Column>
+                        <h3>16:00</h3>
+                    </Grid.Column>
+                    <Grid.Column>
+                        <h3>Vigsel</h3>
+                    </Grid.Column>
+                </Grid>
+                <Grid container columns={2}>
+                    <Grid.Column>
+                        <h3>16:30 ish</h3>
+                    </Grid.Column>
+                    <Grid.Column>
+                        <h3>Snittar & Mingel</h3>
+                    </Grid.Column>
+                </Grid>
+                <Grid container columns={2}>
+                    <Grid.Column>
                         <h3>18:00</h3>
                     </Grid.Column>
                     <Grid.Column>
